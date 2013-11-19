@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
 sudo aptitude update
 sudo aptitude install zlib1g-dev openssl libopenssl-ruby1.9.1 libssl-dev libruby1.9.1 libreadline-dev build-essential
 if [[ ! `which git` ]]; then
