@@ -19,3 +19,8 @@ cd ~/.rbenv/plugins
 git clone git://github.com/sstephenson/ruby-build.git
 rbenv install 1.9.3-p448
 rbenv rehash
+
+cd /home/vagrant/owg2013-rack-unicorn-sinatra/sinatra-nginx-unicorn/
+gem install bundler
+rbenv rehash
+bundle install --path vendor/bundle --without development test
