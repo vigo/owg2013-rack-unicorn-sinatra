@@ -11,10 +11,10 @@
 
 APP_NAME="my_unicorn_application"
 APP_ROOT="/home/vagrant/owg2013-rack-unicorn-sinatra/sinatra-nginx-unicorn"
-APP_DAEMON="unicornd_my_unicorn_application"
+APP_DAEMON="unicornd_${APP_NAME}"
 
 DAEMON_OPTS="-c ${APP_ROOT}/unicorn.rb -E production -D ${APP_ROOT}/config.ru"
-PID="/tmp/demo/pids/unicorn.pid"
+PID="${APP_ROOT}/tmp/pids/unicorn.pid"
 OLD_PID="$PID.oldbin"
 USER="vagrant"
 
