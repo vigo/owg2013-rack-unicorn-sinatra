@@ -8,7 +8,7 @@ source /home/vagrant/owg2013-rack-unicorn-sinatra/scripts/install_rbenv_ubuntu_1
 echo "Installing nginx and configuring needs..."
 source /home/vagrant/owg2013-rack-unicorn-sinatra/scripts/install_nginx.sh
 
-if [[ ! -e ~/.ackrc ]]; then
+if [[ ! -e /etc/init.d/unicornd_my_unicorn_application ]]; then
     sudo ln -s /home/vagrant/owg2013-rack-unicorn-sinatra/sinatra-nginx-unicorn/service.sh /etc/init.d/unicornd_my_unicorn_application
 fi
 
