@@ -2,10 +2,14 @@
 
 set -e
 
+if [[ `which rbenv` ]]; then
+    exit 0
+fi
+
 sudo aptitude update
 sudo aptitude install -y zlib1g-dev openssl libopenssl-ruby1.9.1 libssl-dev libruby1.9.1 libreadline-dev build-essential
 if [[ ! `which git` ]]; then
-  sudo aptitude install -y git-core
+    sudo aptitude install -y git-core
 fi
 cd
 git clone git://github.com/sstephenson/rbenv.git .rbenv

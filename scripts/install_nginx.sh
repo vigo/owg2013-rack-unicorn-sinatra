@@ -2,6 +2,10 @@
 
 set -e
 
+if [[ `which nginx` ]]; then
+    exit 0
+fi
+
 sudo aptitude install -y python-software-properties
 sudo add-apt-repository ppa:nginx/stable
 sudo aptitude update
