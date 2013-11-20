@@ -24,3 +24,4 @@ cd /home/vagrant/owg2013-rack-unicorn-sinatra/sinatra-nginx-unicorn/
 gem install bundler
 rbenv rehash
 bundle install --path vendor/bundle --without development test
+mkdir -p tmp/{sockets,pids,log}

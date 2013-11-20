@@ -1,4 +1,4 @@
-@dir = "/tmp/demo/"
+@dir = "/home/vagrant/owg2013-rack-unicorn-sinatra/sinatra-nginx-unicorn/tmp/"
 worker_processes 2
 working_directory @dir
 timeout 30
