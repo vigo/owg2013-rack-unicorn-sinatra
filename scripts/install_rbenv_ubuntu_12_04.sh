@@ -17,6 +17,7 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 
 export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
 
 mkdir -p ~/.rbenv/plugins
 cd ~/.rbenv/plugins
